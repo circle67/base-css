@@ -1,0 +1,132 @@
+// Variables
+$font: sans-serif;
+$mono-font: monospace;
+$spacer: 1rem;
+
+// Variables - Color
+$link-hue: 270deg;
+$link-color: oklch(80% 0.025 $link-hue);
+$link-cover-on-hover: oklch(90% 0.025 $link-hue);
+
+%space-after {
+    margin-block-end: $spacer;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $font;
+}
+
+cite {
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+dl,
+dt,
+blockquote {
+    word-break: break-word;
+    hyphens: auto;
+}
+
+img,
+video,
+canvas,
+svg,
+object,
+iframe {
+    display: block;
+    max-width: 100%;
+}
+
+p {
+    @extend %space-after;
+}
+
+h1 {
+    @extend %space-after;
+
+    font-size: 4rem;
+}
+
+h2 {
+    @extend %space-after;
+
+    font-size: 3.4rem;
+}
+
+h3 {
+    @extend %space-after;
+
+    font-size: 2.8rem;
+}
+
+h4 {
+    @extend %space-after;
+
+    font-size: 2.2rem;
+}
+
+h5 {
+    @extend %space-after;
+
+    font-size: 1.6rem;
+}
+
+h6 {
+    @extend %space-after;
+
+    font-size: 1rem;
+}
+
+ol,
+ul,
+menu {
+    list-style-position: inside;
+}
+
+pre,
+code,
+kbd,
+samp {
+    font-family: $mono-font;
+}
+
+a {
+    color: $link-color;
+}
+
+a:hover {
+    color: $link-cover-on-hover;
+}

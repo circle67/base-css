@@ -1,0 +1,29 @@
+{
+    "name": "base-css",
+    "version": "1.0.0",
+    "description": "A simple, opinionated CSS reset + a little more.",
+    "main": "dist/base.min.css",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "css:lint": "npx stylelint src/**.scss",
+        "css:compile": "sass --no-source-map src/base.scss | postcss -o dist/base.min.css",
+        "build": "rimraf dist/ && npm run css:lint -- --fix && npm run css:compile"
+    },
+    "keywords": [
+        "css"
+    ],
+    "author": "circle67",
+    "license": "MIT",
+    "devDependencies": {
+        "autoprefixer": "^10.4.16",
+        "cssnano": "^6.0.1",
+        "postcss": "^8.4.31",
+        "postcss-banner": "^4.0.1",
+        "postcss-cli": "^10.1.0",
+        "postcss-preset-env": "^9.3.0",
+        "rimraf": "^5.0.5",
+        "stylelint": "^15.11.0",
+        "stylelint-config-standard-scss": "^11.0.0"
+    }
+}

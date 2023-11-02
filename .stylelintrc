@@ -1,0 +1,7 @@
+{
+    "extends": ["stylelint-config-standard-scss"],
+    "ignorePath": ["dist/**"],
+    "rules": {
+        "custom-property-pattern": null
+    }
+}
