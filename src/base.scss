@@ -5,8 +5,8 @@ $spacer: 1rem;
 
 // Variables - Color
 $link-hue: 270deg;
-$link-color: oklch(80% 0.025 $link-hue);
-$link-cover-on-hover: oklch(90% 0.025 $link-hue);
+$link-color: oklch(35% 0.2 $link-hue);
+$link-cover-on-hover: oklch(45% 0.2 $link-hue);
 
 %space-after {
     margin-block-end: $spacer;
