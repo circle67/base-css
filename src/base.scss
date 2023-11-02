@@ -5,8 +5,8 @@ $spacer: 1rem;
 
 // Variables - Color
 $link-hue: 270deg;
-$link-color: oklch(80% 0.025 $link-hue);
-$link-cover-on-hover: oklch(90% 0.025 $link-hue);
+$link-color: oklch(35% 0.2 $link-hue);
+$link-cover-on-hover: oklch(45% 0.2 $link-hue);
 
 %space-after {
     margin-block-end: $spacer;
@@ -32,34 +32,6 @@ body {
     font-family: $font;
 }
 
-cite {
-    font-style: normal;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-wrap: balance;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-li,
-dl,
-dt,
-blockquote {
-    word-break: break-word;
-    hyphens: auto;
-}
-
 img,
 video,
 canvas,
@@ -72,6 +44,15 @@ iframe {
 
 p {
     @extend %space-after;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
 }
 
 h1 {
@@ -110,10 +91,31 @@ h6 {
     font-size: 1rem;
 }
 
-ol,
-ul,
-menu {
-    list-style-position: inside;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+dl,
+dt,
+blockquote {
+    word-break: break-word;
+    hyphens: auto;
+}
+
+cite {
+    font-style: normal;
+}
+
+a {
+    color: $link-color;
+}
+
+a:hover {
+    color: $link-cover-on-hover;
 }
 
 pre,
@@ -123,10 +125,8 @@ samp {
     font-family: $mono-font;
 }
 
-a {
-    color: $link-color;
-}
-
-a:hover {
-    color: $link-cover-on-hover;
+ol,
+ul,
+menu {
+    list-style-position: inside;
 }

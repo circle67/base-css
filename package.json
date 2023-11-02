@@ -1,6 +1,6 @@
 {
     "name": "base-css",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A simple, opinionated CSS reset + a little more.",
     "main": "dist/base.min.css",
     "type": "module",
